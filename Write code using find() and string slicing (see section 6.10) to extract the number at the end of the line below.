@@ -1,0 +1,14 @@
+ Write code using find() and string slicing (see section 6.10) to extract the number at the end of the line below. 
+ Convert the extracted value to a floating point number and print it out.
+ 
+ 
+#code
+
+text = "X-DSPAM-Confidence:    0.8475";
+a=text.find(':')
+#print(a)
+b=text.find('5',a)
+#print(b)
+c=text[a+5:b+1]
+print(float(c))
+ 
